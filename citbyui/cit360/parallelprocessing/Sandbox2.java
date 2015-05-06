@@ -24,13 +24,13 @@ public class Sandbox2 implements Runnable {
         doStuff();
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Sandbox2 inst = new Sandbox2();
         for (int i = 0; i < 6; i++) {
             inst.doStuff();
             //newThread();
         }
-    }
+    }*/
 
     private void print(String output) {
         System.out.println("...");

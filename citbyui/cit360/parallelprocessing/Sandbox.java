@@ -12,25 +12,30 @@ package citbyui.cit360.parallelprocessing;
 public class Sandbox extends Thread {
 
     int num;
+
+    /*public static void main(String[] args) {
+        try {
+            for (int i = 0; i < 5; i++) {
+                Sandbox test = new Sandbox(i);
+                test.start();
+                Thread.sleep(5);
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Interrupted");
+        }
+    }*/
+
     public void run() {
         System.out.println("Thread id: " + Thread.currentThread().getName());
-        System.out.println("num: "+num);
+        System.out.println("num: " + num);
     }
-    
-    public Sandbox(int num){
+
+    public Sandbox(int num) {
         this.num = num;
     }
-    
-    public int getNum(){
+
+    public int getNum() {
         return num;
     }
 
-    /*public static void main(String[] args) throws InterruptedException {
-        int num = 0;
-        for (int i = 0; i < 5; i++) {
-            Sandbox test = new Sandbox(i);
-            test.start();
-            Thread.sleep(5);
-        }
-    }*/
 }
