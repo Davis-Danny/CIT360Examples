@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg360.examples;
+package citbyui.cit360.collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
