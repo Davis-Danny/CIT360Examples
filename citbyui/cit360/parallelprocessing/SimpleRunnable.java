@@ -7,24 +7,23 @@ public class SimpleRunnable implements Runnable{
     int delay;
     
     public SimpleRunnable(){
-        pathNum = 0;
-        delay = 0;
+        this(0,0);
     }
     
     public SimpleRunnable(int pathNum){
-        this.pathNum = pathNum;
-        delay = 0;
+        this(pathNum,0);
     }
     
     public SimpleRunnable(int pathNum, int delay){
     	this.delay = delay;
+    	this.pathNum = pathNum;
     }
     
        
     public void run(){
-        System.out.println("I'm a thread from path " + pathNum);
         try {
 			Thread.sleep(delay);
+	        System.out.println("I'm a thread from path " + pathNum);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
