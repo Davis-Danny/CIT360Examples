@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 
 public class RealSandbox {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		// (1)happy path- create a new thread and run it
@@ -79,14 +80,6 @@ public class RealSandbox {
 		} catch (Throwable e) {
 			System.out.println("Exception in path 8:" +  e.getMessage());
 		}
-		
-		// try/catch template
-		try {
-
-		} catch (Throwable e) {
-			System.out.println("Exception in path x:" +  e.getMessage());
-		}
-
 	}
 
 }
