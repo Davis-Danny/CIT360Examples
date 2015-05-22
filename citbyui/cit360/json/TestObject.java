@@ -23,6 +23,7 @@ public class TestObject implements Serializable {
 		theDate = aDate;
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public TestObject(HashMap aMapRepresentation){
 		this.theString = (String)aMapRepresentation.get("theString");
 		//dates are stored as timestamp strings.
@@ -59,6 +60,7 @@ public class TestObject implements Serializable {
 		return true;
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public static TestObject buildFromJson(String jsonString) throws ParseException, JSONException{
 		HashMap aMap = (HashMap) JSONUtilities.parse(jsonString);
 		String aString = (String) aMap.get("theString");

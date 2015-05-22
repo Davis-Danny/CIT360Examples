@@ -9,15 +9,15 @@ public class ParallelProcessingSandbox {
 	public static void main(String[] args) {
 
 		// (1)happy path- create a new thread and run it
-		Thread newThread = new Thread((Runnable) new SimpleRunnable(1));
-		newThread.start();
+		Thread path1Thread = new Thread(new SimpleRunnable(1));
+		path1Thread.start();
 
 		// (2)happy path- create multiple threads and run them concurrently
 		try {
 			int numToMake = 5;
 			Thread[] manyThreads = new Thread[numToMake];
 			for (int i = 0; i < numToMake; i++) {
-				manyThreads[i] = new Thread((Runnable) new SimpleRunnable(2));
+				manyThreads[i] = new Thread(new SimpleRunnable(2));
 				manyThreads[i].start();
 			}
 		} catch (Throwable e) {
