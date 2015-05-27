@@ -12,98 +12,78 @@ import java.util.Arrays;
 public class collections {
     public static void main(String[] args)
     {
-        // create an ArrayList variable
-        ArrayList arrayListOne;
+        ArrayList arrayListOne;     // create an ArrayList variable
         
-        // create an ArrayList object
-        arrayListOne = new ArrayList();
+        arrayListOne = new ArrayList();     // create an ArrayList object
         
-        // create in one line
-        ArrayList arrayListTwo = new ArrayList();
+        ArrayList arrayListTwo = new ArrayList();      // create in one line
         
-        // new arraylist of specific type of elements. example: string
-        ArrayList<String> names = new ArrayList<String>();
+        ArrayList<String> names = new ArrayList<String>();  // new arraylist of specific type of elements. example: string
         
-        // add elements
-        names.add("John Smith");
+        names.add("John Smith");    // add elements
         names.add("Aaron Schwarze");
         names.add("Scott Noble");
         
-        // element placed at point 2 instead of the bottom of the list
-        names.add(2, "Mark Ball"); 
+        names.add(2, "Mark Ball"); // element placed at point 2 instead of the bottom of the list
         
-        // retrieve values with get()
-        for(int i=0; i<names.size(); i++)
+        for(int i=0; i<names.size(); i++)   // retrieve values with get()
         {
-        System.out.println(names.get(i));
+        System.out.println(names.get(i));  // print value on specific index
         }
         System.out.println();
         
-        // replace a value
-        names.set(0, "Joseph Smith");
+        names.set(0, "Joseph Smith");   // replace a value
         
-        // remove a value
-        names.remove(3);
-        // remove a range of items ex: (0, 3)
+        names.remove(3);    // remove a value
+            // remove a range of items ex: (0, 3)
         
         System.out.println(names);
         
-        // retrieve values with get()
-        for(int i=0; i<names.size(); i++)
+        for(int i=0; i<names.size(); i++)   // retrieve values with get()
         {
         System.out.println(names.get(i));
         }
         System.out.println();
         
-        // enhance 'for' to use an iterator with arraylist
-        for(String i : names)
+        for(String i : names)   // enhance 'for' to use an iterator with arraylist
         {
             System.out.println(i);
         }
         System.out.println();
         
-        // creates iterator
-        Iterator indivItems = names.iterator();
-        // when hasNext is called it returns true or false
-        while(indivItems.hasNext())
+        Iterator indivItems = names.iterator();     // creates iterator
+        
+        while(indivItems.hasNext())// when hasNext is called it returns true or false
         {
-            // retrieves arraylist with next items
-            System.out.println(indivItems.next());
+            
+            System.out.println(indivItems.next());  // retrieves arraylist with next items
         }
         
-        // create arraylist without stating values
-        ArrayList nameCopy = new ArrayList();
+        ArrayList nameCopy = new ArrayList();   // create arraylist without stating values
         ArrayList nameBackup = new ArrayList();
         
-        // addAll adds everrything from one array to another
-        nameCopy.addAll(names);
+        nameCopy.addAll(names);     // addAll adds everrything from one array to another
         System.out.println(nameCopy);
         
-        // add a variable to an arraylist (line 95)
-        String paulYoung = "Paul Young";
+        String paulYoung = "Paul Young";    // add a variable to an arraylist (line 95)
         names.add(paulYoung);
         
-        // verify that a particular item is here
-        if(names.contains(paulYoung))
+        if(names.contains(paulYoung))   // verify that a particular item is here
         {
             System.out.println("Paul is here");
         }
         
-        // delete everything in the arraylist
-        names.clear();
+        names.clear();  // delete everything in the arraylist
         
-        // is it empty?
-        if (names.isEmpty())
+        if (names.isEmpty())// is it empty?
         {
             System.out.println("The ArrayList is empty");
         }
         Object[] moreNames = new Object[4];
         
-        // to array converts the ArrayList into an array of objects
-        moreNames = nameCopy.toArray();
+        moreNames = nameCopy.toArray();     // to array converts the ArrayList into an array of objects
         
-        // toString converts items in the array into a String
-        System.out.println(Arrays.toString(moreNames));
+        System.out.println(Arrays.toString(moreNames));     // toString converts items in the array into a String
         
     }
 }
