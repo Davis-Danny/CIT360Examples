@@ -8,13 +8,6 @@ import citbyui.cit360.davisdanny.junit.totest.ToTest;
 
 public class ToTestTest {
 
-	private ToTest tester = new ToTest();
-	
-	/*@Test
-	public void testAddAAndB() {
-		test.get
-	}*/
-
 	
 	@Test
 	public void basicMultiplicationShouldWork() {
