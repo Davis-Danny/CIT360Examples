@@ -13,8 +13,8 @@ public class CollectionsTest {
 		// listTest();
 		// mapTest();
 		// iteratorTest();
-		// setTest();
-		treeTest();
+		setTest();
+		// treeTest();
 	}
 
 	public static void listTest() {
