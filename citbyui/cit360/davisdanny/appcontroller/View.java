@@ -10,7 +10,7 @@ public class View {
 		scanner = new Scanner(System.in);
 	}
 	
-	public int getInputInt() {
+	public int getInputInt(String prompt) {
 
 		while (true) {
 			String command = scanner.nextLine();
@@ -19,9 +19,13 @@ public class View {
 				int intCommand = Integer.parseInt(command);
 				return intCommand;
 			} catch (NumberFormatException e) {
-				display("Please enter a number");
+				display(prompt);
 			}
 		}
+	}
+	
+	public int getInputInt(){
+		return getInputInt("Please enter a number");
 	}
 	
 	public String prompt(String message){

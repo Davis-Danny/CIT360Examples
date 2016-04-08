@@ -91,7 +91,6 @@ public class CollectionsTest {
 	}
 
 	public static void treeTest() {
-		Random rng = new Random();
 		TreeMap<Integer, String> testTree = new TreeMap<Integer, String>();
 
 		testTree.put(2,"Their values are stored and accessed with keys.");

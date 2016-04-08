@@ -1,6 +1,5 @@
 package citbyui.cit360.davisdanny.appcontroller.handlers;
 
-import java.io.FileNotFoundException;
 import citbyui.cit360.davisdanny.appcontroller.SessionBean;
 import citbyui.cit360.davisdanny.appcontroller.View;
 
@@ -50,8 +49,4 @@ public class Menu implements Handler {
 		}
 	}
 	
-	public void autoMenu(){
-		session.getController();
-	}
-
 }
